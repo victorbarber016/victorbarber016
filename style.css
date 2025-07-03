@@ -1,0 +1,492 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181414;
+    padding: 0px 20px;
+    border-bottom: 2px solid #333333;
+    color: #fff;
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */   
+    
+}
+
+header .logo img {
+    height: 120px;
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header .social-media .icon {
+    width: 30px;
+    height: 30px;
+}
+
+header .shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease; /* Transição suave */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+header .shop-now:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    background-color: #e76f51;
+
+}
+
+/* Botões de Mídias Sociais */
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.social-media .icon:hover {
+    transform: scale(1.3);
+    
+}
+
+
+
+/* Corpo principal */
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(182, 52, 52, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #444;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section p {
+    margin: 10px 0;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Blog */
+#blog article {
+    margin-top: 20px;
+}
+
+#blog article h3 {
+    color: #f4a261;
+    margin-bottom: 10px;
+}
+
+#blog article a {
+    color: #e76f51;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blog article a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Profissional */
+.profissional-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profissional-info img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profissional-detalhes {
+    text-align: left;
+}
+
+
+
+/* Mapa */
+.localizacao {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.localizacao iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* Estilos para o carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Ajuste a largura máxima do carrossel */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%; /* Ajusta a imagem para ocupar o espaço disponível */
+    max-height: 400px; /* Define uma altura máxima */
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
+    flex-shrink: 0;
+}
+
+
+
+/* Estilo comum para seções */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Grid para "Antes e Depois" e "Seu Profissional" */
+.section-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.section-antes-depois, .section-profissional {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    
+}
+
+/* Carrossel */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Profissional */
+.profissional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profissional-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.profissional-detalhes {
+    text-align: center;
+}
+
+/* Serviços */
+#servicos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicos li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+
+.clickable-title {
+    cursor: pointer;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.clickable-title:hover {
+    color: #f4a261;
+    text-shadow: 0 0 10px rgba(244, 162, 97, 0.7);
+}
+
+
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.floating-button {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-button:hover {
+    background-color: #e76f51;
+    transform: scale(1.1);
+}
+
+
+
+/* Estilo para os títulos */
+.clickable-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clickable-title::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Tamanho da linha */
+    height: 3px;
+    background-color: orange; /* Cor laranja */
+    bottom: 0;
+    left: 25%; /* Centraliza a linha */
+    transition: all 0.3s ease-in-out; /* Suavidade ao interagir */
+}
+
+.clickable-title:hover::after {
+    width: 100%; /* Linha expande ao passar o mouse */
+    left: 0; /* Ajusta a posição ao expandir */
+}
+
+
+/* agora o visual do sales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.store-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.product-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-item .btn {
+    background: #333;
+    color: white;
+    padding: 8px 10px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+.product-item .btn:hover {
+    transform: scale(1.1);
+}
+
+.amazon-logo {
+    height: 20px;
+    width: auto;
+    display: inline-block;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+}
